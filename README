@@ -1,4 +1,5 @@
 Example ~/.dbt/profiles.yml file:
+
 ```yaml
 dbt_look_ecommerce:
   outputs:
