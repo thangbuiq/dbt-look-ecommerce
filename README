@@ -1,0 +1,17 @@
+Example ~/.dbt/profiles.yml file:
+```yaml
+dbt_look_ecommerce:
+  outputs:
+    dev:
+      dataset: dbt_look_ecommerce
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: ./keyfile.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: <your-project-id>
+      threads: 6
+      type: bigquery
+  target: dev
+```
