@@ -1,8 +1,10 @@
+{{ config(materialized="table") }}
+
 with
     source as (select *, from {{ source("thelook_ecommerce", "products") }}),
     renamed as (
         select
-            {{ adapter.quote("id") }},
+            {{ adapter.quote("id") }} as product_id,
             {{ adapter.quote("cost") }},
             {{ adapter.quote("category") }},
             {{ adapter.quote("name") }},
