@@ -1,3 +1,5 @@
+Always run `dbt deps` before running `dbt run` or `dbt test` to ensure that all dependencies are installed.
+
 Example ~/.dbt/profiles.yml file:
 
 ```yaml

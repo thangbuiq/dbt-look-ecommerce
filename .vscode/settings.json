@@ -1,3 +1,8 @@
 {
-  "dbt.enableNewLineagePanel": true
+  "files.associations": {
+    "*.sql": "jinja-sql",
+  },
+  "dbt.fileNameTemplateGenerateModel": "{prefix}_{sourceName}__{tableName}",
+  "dbt.enableNewLineagePanel": true,
+  "editor.formatOnSave": true,
 }
