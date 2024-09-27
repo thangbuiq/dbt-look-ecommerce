@@ -1,0 +1,5 @@
+version: 2
+models:
+  - name: ecommerce/int_ecommerce__order_items_products
+    description: ""
+

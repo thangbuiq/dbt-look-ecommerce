@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: ecommerce/stg_ecommerce__events
+    description: ""
+
+  - name: ecommerce/stg_ecommerce__order_items
+    description: ""
+
+  - name: ecommerce/stg_ecommerce__orders
+    description: ""
+
+  - name: ecommerce/stg_ecommerce__products
+    description: ""
+

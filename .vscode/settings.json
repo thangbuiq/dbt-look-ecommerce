@@ -5,5 +5,5 @@
   "dbt.fileNameTemplateGenerateModel": "{prefix}_{sourceName}__{tableName}",
   "dbt.enableNewLineagePanel": true,
   "editor.formatOnSave": true,
-  "dbt.perspectiveTheme": "Vintage",
+  "dbt.perspectiveTheme": "Pro Dark",
 }
