@@ -2,8 +2,7 @@
   "files.associations": {
     "*.sql": "jinja-sql",
   },
-  "dbt.fileNameTemplateGenerateModel": "{prefix}_{sourceName}__{tableName}",
-  "dbt.enableNewLineagePanel": true,
   "editor.formatOnSave": true,
-  "dbt.perspectiveTheme": "Pro Dark",
+  "turntable.dbtVersion": "1.8",
+  "turntable.warehouse": "bigquery",
 }

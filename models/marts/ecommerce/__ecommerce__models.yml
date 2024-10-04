@@ -1,5 +1,38 @@
 version: 2
 models:
   - name: ecommerce/dim_orders
-    description: ""
+    description: ''
 
+  - name: dim_orders
+    description: The dim_orders model is a tool that provides a detailed view of each
+      order in a business, including information about discounts, profits, sale prices,
+      and product details. It's like a digital ledger, keeping track of all transactions.
+      This model can be used to analyze sales trends, identify profitable products,
+      and understand customer buying habits. For example, it can show if certain products
+      are more profitable due to higher sale prices or lower costs, or if certain
+      departments are offering more discounts. This information can help in making
+      strategic business decisions.
+    columns:
+      - name: order_item_id
+        description: The unique identifier for each item included in an order.
+      - name: order_id
+        description: The unique identifier for each order placed.
+      - name: user_id
+        description: The unique identifier for the customer who placed the order.
+      - name: product_id
+        description: The unique identifier for each product ordered.
+      - name: item_sale_price
+        description: The actual price the customer paid for the product.
+      - name: product_cost
+        description: The wholesale cost of the product paid by the company.
+      - name: product_retail_price
+        description: The standard retail price of the product.
+      - name: product_department
+        description: The department or category that the ordered product belongs to,
+          e.g. Electronics, Clothing, etc.
+      - name: item_discount
+        description: The dollar amount of any discount applied to the product. Calculated
+          as product_retail_price minus item_sale_price.
+      - name: item_profit
+        description: The profit earned from the sale of each product. Calculated as
+          item_sale_price minus product_cost.

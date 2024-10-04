@@ -1,5 +1,43 @@
 version: 2
 models:
   - name: ecommerce/int_ecommerce__order_items_products
-    description: ""
+    description: ''
 
+  - name: int_ecommerce__order_items_products
+    description: The int_ecommerce__order_items_products model is a tool that combines
+      data from product sales and product details. It provides insights into each
+      item sold, such as the sale price, cost, and the department it belongs to. It
+      also calculates the discount given on each item and the profit made from each
+      sale. This model can be used to track sales performance, identify profitable
+      products, and understand customer buying patterns. It can help in making strategic
+      decisions like pricing and inventory management.
+    columns:
+      - name: order_item_id
+        description: A unique number that identifies this specific item within the
+          order.
+      - name: order_id
+        description: A unique number that identifies the overall order that contains
+          this item.
+      - name: user_id
+        description: A unique number that identifies the customer who placed the order
+          containing this item.
+      - name: product_id
+        description: A unique number that identifies this product.
+      - name: item_sale_price
+        description: The final price paid by the customer for this specific order
+          item.
+      - name: product_cost
+        description: The dollar amount the company paid to acquire or produce this
+          product.
+      - name: product_retail_price
+        description: The standard price this product is sold for before any discounts
+          or promotions are applied.
+      - name: product_department
+        description: The category of goods that this product belongs to, such as 'Apparel',
+          'Electronics', or 'Home & Garden'.
+      - name: item_discount
+        description: The dollar amount deducted from the product's standard retail
+          price for this specific order item.
+      - name: item_profit
+        description: The dollar amount earned as profit from the sale of this specific
+          order item. Calculated as the item's sale price minus the product's cost.
